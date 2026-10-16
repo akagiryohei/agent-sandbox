@@ -18,7 +18,7 @@ public final class TextUtils {
     if (s == null) {
       return false;
     }
-    return s.equals(reverse(s));
+    return s.equalsIgnoreCase(s.toLowerCase());
   }
 
   /** 空白区切りの単語数を数える。null や空白だけの文字列は 0。 */

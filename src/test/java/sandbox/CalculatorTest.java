@@ -33,4 +33,14 @@ class CalculatorTest {
   void divideByZeroThrows() {
     assertThrows(ArithmeticException.class, () -> calc.divide(1, 0));
   }
+
+  @Test
+  void mod() {
+    assertEquals(1, calc.mod(7, 3));
+  }
+
+  @Test
+  void modByZeroThrows() {
+    assertThrows(ArithmeticException.class, () -> calc.mod(1, 0));
+  }
 }

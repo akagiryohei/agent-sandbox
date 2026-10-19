@@ -26,4 +26,16 @@ public class Calculator {
     }
     return a / b;
   }
+
+  /**
+   * 整数の剰余（割り算の余り）。
+   *
+   * @throws ArithmeticException b が 0 のとき
+   */
+  public int mod(int a, int b) {
+    if (b == 0) {
+      throw new ArithmeticException("0 で割ることはできません");
+    }
+    return a % b;
+  }
 }
